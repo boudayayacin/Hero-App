@@ -9,14 +9,11 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './first.component.css'
 })
 export class FirstComponent {
-  cars = [
-    {
-      name: 'clio',
-       age: 20
-      },
-    {
-      name: 'bmw'
-       , age:100
-      },
+  user = [
+    {name: "ahmed",
+    age:20},
+    {name: "ahmed",
+    age:40}
   ]
+  
 }
