@@ -9,11 +9,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './first.component.css'
 })
 export class FirstComponent {
-  user = [
-    {name: "ahmed",
-    age:20},
-    {name: "ahmed",
-    age:40}
-  ]
-  
+
 }
