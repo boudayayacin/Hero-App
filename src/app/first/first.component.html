@@ -1,0 +1,6 @@
+<div *ngFor="let item of cars">
+    <ng-container *ngIf="item.age > 50">
+        <h1>{{ item.name }}</h1>
+        <p>{{ item.age }}</p>
+    </ng-container>
+</div>
