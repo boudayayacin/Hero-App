@@ -1,0 +1,16 @@
+<div class="row mt-5">
+    <div class="col-3">
+      <input [(ngModel)]="hero.name" class="form-control m-1" type="text" placeholder="name" />
+    </div>
+    <div class="col-3">
+      <input [(ngModel)]="hero.power" class="form-control m-1" type="text" placeholder="power" />
+    </div>
+    <div class="col-3">
+      <input [(ngModel)]="hero.url" class="form-control m-1" type="text" placeholder="url" />
+    </div>
+    <div class="col-3">
+      <button (click)="click()" class="btn form-control m-1 text-light">
+        create
+      </button>
+    </div>
+  </div>
