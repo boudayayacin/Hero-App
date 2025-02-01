@@ -10,4 +10,19 @@ import { FormsModule } from '@angular/forms';
 })
 export class FirstComponent {
 
+  hero = {
+    name: '',
+    power: 0,
+    url: ''
+  }
+  heros: any[] = []
+
+  click(){
+    this.heros.push(this.hero);
+    this.hero = {
+      name: '',
+      power: 0,
+      url: ''
+    }
+  }
 }
