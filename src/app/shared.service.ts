@@ -14,7 +14,10 @@ export class SharedService {
     return this.http.post(this.url + 'hero/ajout',hero) ; 
   }
 
-  getHero(hero: any){
-    return this.http.get(this.url + 'hero/all', hero);
+  getHero(){
+    return this.http.get(this.url + 'hero/all');
+  }
+  deleteHero(id: any){
+    return this.http.delete(this.url + 'hero/supprimer/'+ id)
   }
 }
