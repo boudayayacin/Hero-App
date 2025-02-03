@@ -5,5 +5,5 @@ import { ListComponent } from './list/list.component';
 export const routes: Routes = [
   { path: 'ajout', component: AjoutComponent },
   { path: 'list', component: ListComponent },
-  { path: '', redirectTo: '/list', pathMatch: 'full' } // Redirige vers '/list' par défaut
+  { path: '', redirectTo: '/list', pathMatch: 'full' } 
 ];
