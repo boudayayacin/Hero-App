@@ -13,11 +13,13 @@ export class SharedService {
   createHero(hero: any){
     return this.http.post(this.url + 'hero/ajout',hero) ; 
   }
-
   getHero(){
     return this.http.get(this.url + 'hero/all');
   }
   deleteHero(id: any){
     return this.http.delete(this.url + 'hero/supprimer/'+ id)
+  }
+  updateHero(id: any , newData: any){
+    return this.http.put(this.url + 'hero/update/' + id , newData);
   }
 }

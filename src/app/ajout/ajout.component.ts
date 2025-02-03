@@ -15,7 +15,7 @@ export class AjoutComponent {
   hero = {
     name: '',
     power: 0,
-    url: ''
+    image: ''
   }
   click(){
     this._shared.createHero(this.hero)
@@ -23,7 +23,6 @@ export class AjoutComponent {
       res =>{
         console.log(res);
         this.router.navigate(['/'])
-        
       },
       err =>{
         console.log(err);
@@ -33,7 +32,7 @@ export class AjoutComponent {
     this.hero = {
       name: '',
       power: 0,
-      url: ''
+      image: ''
     }
   }
 }
