@@ -1,5 +1,4 @@
 <div class="row mt-5">
-    <div class="col-3" *ngFor="let item of heros">
     <div class="col-3">
       <input [(ngModel)]="hero.name" class="form-control m-1" type="text" placeholder="name" />
     </div>
@@ -10,9 +9,8 @@
       <input [(ngModel)]="hero.image" class="form-control m-1" type="text" placeholder="url" />
     </div>
     <div class="col-3">
-      <button (click)="click()" class="btn form-control m-1 text-light">
-        create
+      <button (click)="update()" class="btn form-control m-1 text-light">
+        update
       </button>
     </div>
-</div>
   </div>

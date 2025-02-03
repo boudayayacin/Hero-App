@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SharedService } from '../shared.service';
 import Swal from 'sweetalert2'
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-list',
-  imports: [FormsModule , CommonModule],
+  imports: [FormsModule , CommonModule,RouterModule],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })
@@ -56,6 +57,6 @@ export class ListComponent implements OnInit {
     });
   }
   update(id: any){
-    
+
   }
 }

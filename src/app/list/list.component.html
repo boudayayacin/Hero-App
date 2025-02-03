@@ -9,7 +9,7 @@
         <p>{{item.power}}</p>
         <div class="m-2 d-flex justify-content-between">
           <button (click)="delete(item._id)" class="btn btn-danger">Delete</button>
-          <button (click)="update(item._id)" class="btn btn-warning">Update</button>
+          <button [routerLink]="['/update',item._id]" class="btn btn-warning">Update</button>
         </div>
       </div>
     </div>

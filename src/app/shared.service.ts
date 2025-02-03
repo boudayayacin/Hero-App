@@ -19,7 +19,10 @@ export class SharedService {
   deleteHero(id: any){
     return this.http.delete(this.url + 'hero/supprimer/'+ id)
   }
-  updateHero(id: any , newData: any){
-    return this.http.put(this.url + 'hero/update/' + id , newData);
+  updateHero(id: any , hero: any){
+    return this.http.put(this.url + 'hero/update/' + id , hero);
+  }
+  getHeroById(id: any){
+    return this.http.get(this.url + 'hero/getbyid/'+id);
   }
 }
