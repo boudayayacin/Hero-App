@@ -29,6 +29,8 @@ export class ListComponent implements OnInit {
     )
   }
   delete(id: any) {
+    console.log(id);
+    
     Swal.fire({
       title: 'Êtes-vous sûr ?',
       text: 'Cette action est irréversible !',

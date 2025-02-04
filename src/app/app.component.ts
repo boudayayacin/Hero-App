@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
