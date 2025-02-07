@@ -4,6 +4,7 @@ import { ListComponent } from './list/list.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { UpdateComponent } from './update/update.component';
 import { LoginComponent } from './login/login.component';
+import { TableComponent } from './table/table.component';
 
 export const routes: Routes = [
   { path: 'ajout', component: AjoutComponent },
@@ -11,5 +12,6 @@ export const routes: Routes = [
   { path: '', redirectTo: '/list', pathMatch: 'full' }, 
   { path: 'update/:id',  component: UpdateComponent } ,
   { path: 'login',  component: LoginComponent } ,
+  { path: 'table',  component: TableComponent } ,
   { path: '**',  component: NotfoundComponent } 
 ];

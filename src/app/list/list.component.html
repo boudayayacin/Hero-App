@@ -1,4 +1,7 @@
-<div class="row mt-5">
+<!-- <div class="add">
+  <a [routerLink]="['/ajout']">Ajouter post</a>
+</div> -->
+  <div class="row mt-5">
   <div class="col-3" *ngFor="let item of heros">
     <div [ngClass]="{ 'card p-1': true , 'bg-red': item?.power > 100 , 'bg-green': item.power < 100 }">
       <div class="card-image">
