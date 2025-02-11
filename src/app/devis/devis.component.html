@@ -29,18 +29,19 @@
   </select>
 </div>
 
-<!-- Liste des services ajoutés -->
-<div *ngFor="let service of selectedServices; let i = index" class="service-details">
-  <p><strong>{{ service.name }}</strong></p>
-
-  <label>Part technicien</label>
-  <input type="number" [(ngModel)]="service.p_tech" />
-
-  <label>Part d'entreprise</label>
-  <input type="number" [(ngModel)]="service.p_ents" />
-
-  <label>Remise</label>
-  <input type="number" [(ngModel)]="service.remise" />
-
-  <button (click)="removeService(i)" class="btn btn-danger">🗑️ Supprimer</button>
+<div *ngFor="let service of selectedServices; let i = index" class="service-details mt-3">
+  <div class="details">
+    <p><strong>{{ service.name }}</strong></p>
+  
+    <label>Part technicien</label>
+    <input type="number" [(ngModel)]="service.p_tech" />
+  
+    <label>Part d'entreprise</label>
+    <input type="number" [(ngModel)]="service.p_ents" />
+  
+    <label>Remise</label>
+    <input type="number" [(ngModel)]="service.remise" />
+  
+    <button (click)="removeService(i)" class="btn btn-danger">🗑️</button>
+  </div>
 </div>

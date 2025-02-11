@@ -16,3 +16,7 @@
 .thre input , .solo input {
     width: 170px;
 }
+.details {
+    display: flex;
+    justify-content: space-around;
+}
